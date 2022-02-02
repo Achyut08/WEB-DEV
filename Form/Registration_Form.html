@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            font-family: calibri,helvetica,sans-serif;
+            background-color: pink;
+        }
+        .container{
+            padding: 50px;
+            background-color: lightblue;
+        }
+        input[type=text],input[type=email],input[type=password],textarea{
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        div{
+            padding: 10px 0;
+        }
+        input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,textarea:focus{
+            background-color: orange;
+            outline: none;
+        }
+        hr{
+            border: 1px solid white;
+            margin-bottom: 25px;
+        }
+        .registerbtn{
+            background-color: green;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px;
+            border:none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .registerbtn{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <h1 style="text-align: center;">Student Registration Form</h1>
+        <hr>
+    <label>First Name</label>
+    <input type="text" name="firstname" placeholder="First Name" required>
+    <label>Middle Name</label>
+    <input type="text" name="Middelname" placeholder="Middle Name" required>
+    <label>Last Name</label>
+    <input type="text" name="lastname" placeholder="last Name" required>
+    <label>Course</label>
+    <select name="course" id="">
+        <option value="course">Course</option>
+        <option value="bca">BCA</option>
+        <option value="bba">BBA</option>
+        <option value="b.tech">B.tech</option>
+        <option value="mba">MBA</option>
+        <option value="mca">MCA</option>
+        <option value="m.tech">M.TECH</option>
+        </select>
+    <label for="">Gender</label>
+    <input type="radio" name="male" value="gender" checked>MALE
+    <input type="radio" name="female" value="gender" >FEMALE
+    <input type="radio" name="other" value="gender" >other
+    <br>
+    <label>Phone no:</label>
+    <input type="tel" name="phone_no" value="+91" placeholder="Phone_no." >
+    <br>
+    <label for="">Current Address</label>
+    <textarea cols="80" rows="5" placeholder="Current Address" value = "address" required></textarea>
+    <label for="">Email</label>
+    <input type="email" name="email" id="" placeholder="email id"> 
+    <label for="">Password</label>
+    <input type="password" placeholder=" Enter password" name="pass" required>
+    <label for="">Password</label>
+    <input type="password" placeholder="Retype password" name="pass" required>
+    <button type="submit" class="registerbtn">Register</button>
+
+
+
+    </div>
+    </form>
+    
+</body>
+</html>
+
+
+output:-file:///D:/web%20dev/html_form_project_day14.html
